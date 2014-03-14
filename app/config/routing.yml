@@ -1,0 +1,4 @@
+aa:
+    resource: "@aaBundle/Resources/config/routing.yml"
+    prefix:   /
+

@@ -1,0 +1,30 @@
+invoice:
+    pattern:  /
+    defaults: { _controller: "aaBundle:Invoice:index" }
+
+invoice_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "aaBundle:Invoice:show" }
+
+invoice_new:
+    pattern:  /new
+    defaults: { _controller: "aaBundle:Invoice:new" }
+
+invoice_create:
+    pattern:  /create
+    defaults: { _controller: "aaBundle:Invoice:create" }
+    requirements: { _method: post }
+
+invoice_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "aaBundle:Invoice:edit" }
+
+invoice_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "aaBundle:Invoice:update" }
+    requirements: { _method: post|put }
+
+invoice_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "aaBundle:Invoice:delete" }
+    requirements: { _method: post|delete }

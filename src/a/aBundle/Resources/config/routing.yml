@@ -1,0 +1,35 @@
+aa_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: aaBundle:Default:index }
+    
+aaBundle_car:
+        resource: "@aaBundle/Resources/config/routing/car.yml"
+        prefix:   /car
+        
+aaBundle_category:
+        resource: "@aaBundle/Resources/config/routing/category.yml"
+        prefix:   /category
+        
+aaBundle_customer:
+        resource: "@aaBundle/Resources/config/routing/customer.yml"
+        prefix:   /customer
+        
+aaBundle_invoice:
+        resource: "@aaBundle/Resources/config/routing/invoice.yml"
+        prefix:   /invoice
+        
+aaBundle_part:
+        resource: "@aaBundle/Resources/config/routing/part.yml"
+        prefix:   /part
+        
+aaBundle_service:
+        resource: "@aaBundle/Resources/config/routing/service.yml"
+        prefix:   /service
+        
+aaBundle_vendor:
+        resource: "@aaBundle/Resources/config/routing/vendor.yml"
+        prefix:   /vendor
+
+        
+        
+        

@@ -1,0 +1,30 @@
+car:
+    pattern:  /
+    defaults: { _controller: "aaBundle:Car:index" }
+
+car_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "aaBundle:Car:show" }
+
+car_new:
+    pattern:  /new
+    defaults: { _controller: "aaBundle:Car:new" }
+
+car_create:
+    pattern:  /create
+    defaults: { _controller: "aaBundle:Car:create" }
+    requirements: { _method: post }
+
+car_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "aaBundle:Car:edit" }
+
+car_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "aaBundle:Car:update" }
+    requirements: { _method: post|put }
+
+car_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "aaBundle:Car:delete" }
+    requirements: { _method: post|delete }
